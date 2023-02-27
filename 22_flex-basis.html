@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        /* 
+        flex-basis
+        >아이템의 기본크기를 정의해주는 속성
+        >기본값 auto
+        >0 -> 아이템의 기본크기를 무시하고 내용물에 맞게 크기가 조절됨
+        > %, px, em, rem 등의 단위를 사용해서 크기를 정함
+        >grow나 shrink의 값이 있을 경우 basis는 값이 무시됨 */
+        *{margin: 0;padding: 0;}
+        .wrap{display: flex;
+            width: 500px;height: 100px; border: 4px solid black; margin: 50px auto;
+        }
+        .wrap div{width: 50px;height: 100px;text-align: center;}
+        .wrap div:nth-child(1){background-color: pink; flex-basis: auto;}
+        .wrap div:nth-child(2){background-color: skyblue; flex-basis: 200px;}
+        .wrap div:nth-child(3){background-color: greenyellow;flex-basis: 50%}
+        .wrap div:nth-child(4){background-color: mediumaquamarine}
+        .wrap div:nth-child(5){background-color: peru}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

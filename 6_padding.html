@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변패딩</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{
+            width: 90%; /*960px*/
+            height: 500px;
+            margin: auto;
+            background-color: burlywood;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+        div p{margin: auto;
+            width: 62.5%;
+            /* width 600px */
+            /* (600/960px)x100 = 62.5% */
+            background-color: darksalmon;
+            /* 가변패딩
+            (만들 크기÷나를 감싸고 있는전체크기)×100 = nn% <-적용할 크기
+            padding: 40px
+            (40/960px)x100 = 4.166666666666666666667% */
+            padding: 100px 4.166666666666666666667%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>유럽에서는 차라고 하면 홍차를 대표적으로 떠올린다. 유럽식, 정확하게 말하면 서유럽식 홍차의 역사는 16세기 중엽 중국에서 시작되는데, 본래 유럽인들이 접한 차는 반발효차인 오룡차였다. 그러나 점점 강하게 발효된 차들이 유럽인들에게 인기를 끌게 되면서, 어느새 홍차라고 하는 새로운 스타일로 굳어진 것이다.영국에 중국 홍차가 처음 소개된 건 포르투갈의 왕녀 브라간사의 캐서린이 시집 올 때 일이다. 캐서린은 영국 찰스 2세(재위 1660~85)와 결혼하면서 당시 귀한 선물이었던 중국 홍차를 영국에 처음으로 가져왔다. 홍차와 관련된 한 가지 재미있는 역사적 사실은, 영국에서 홍차로 성갈등이 생겼다는 것이다. 17세기 당시 유럽에서는, 신문물이었던 커피가 여자와 아이들에게 해롭다는 소문이 있었기 때문에 남성들만 즐길 수 있는 음료였고, 영국 위주로 남성만을 위한 커피하우스라는 카페 문화가 발달했다.
+            </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-layout</title>
+    <style>
+        *{margin: 0;padding: 0; text-align: center;}
+        #wrap{color: white;
+            width: 90%; height: 885px;margin: auto;
+        display: flex; flex-wrap: wrap;
+        }
+
+        /* 헤더 */
+        header{width: 100%; height: 9.03954802259887%; background-color: blueviolet;display: flex; justify-content: space-between;position: relative;}
+        header h1{width: 12.5%; height: 177.5%; background-color: brown;text-align: center;}
+        header nav{width: 10.41666666666667%; height: 50%; font-size: 20px; background-color: darkblue;}
+
+        section.slide{background-color: aqua; width: 50%; height: 49.71751412429379%;}
+        section.gallery{background-color: teal; width: 27.08333333333333%; height: 49.71751412429379%;}
+        section.rankup{background-color: chocolate; width: 22.91666666666667%; height: 49.71751412429379%;}
+        section.latest{background-color: blueviolet; width: 30%;height: 30.50847457627119%;}
+        section.popular{background-color: lightcoral;width: 30%;height: 30.50847457627119%;}
+        section.banner{background-color: royalblue; width: 22.91666666666667%;height: 30.50847457627119%;display: flex;flex-direction: column;}
+        section.banner div:nth-child(1){background-color: skyblue;flex: 1;}
+        section.banner div:nth-child(2){background-color: seagreen;flex: 1;}
+
+        section.social{background-color: plum; width: 17.08333333333333%;height: 30.50847457627119%;}
+        
+        footer{width: 100%; height: 10.73446327683616%; background-color: blue; font-size: 30px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>로고<br>영역</h1>
+            <nav>네비영역</nav>
+        </header>
+        <section class="slide">
+            <h2>슬라이드 영역</h2>
+        </section>
+        <section class="gallery">
+            <h2>갤러리영역</h2>
+        </section>
+        <section class="rankup">
+            <h2>인기검색어영역</h2>
+        </section>
+        <section class="latest">
+            <h2>최근글영역</h2>
+        </section>
+        <section class="popular">
+            <h2>인기글영역</h2>
+        </section>
+        <section class="banner">
+            <div><h2>배너1</h2></div>
+            <div><h2>배너2</h2></div>
+        </section>
+        <section class="social">
+            <h2>소셜네트워크영역</h2>
+        </section>
+        <footer>푸터영역</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        h2{text-align: center;margin-bottom: 20px;}
+        .wrap{
+            width: 90%;height: 500px; border: 4px solid #000; margin: auto; display: flex;
+        }
+        .wrap div{width: 30%;}
+        .wrap div:nth-child(1){background-color: pink; order: 3;}
+        .wrap div:nth-child(2){background-color: skyblue; order: 2;}
+        .wrap div:nth-child(3){background-color: greenyellow; order: 1;}
+    </style>
+</head>
+<body>
+    <h2>order : html 태그 순서를 변경할 때 사용</h2>
+    <div class="wrap wrap1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

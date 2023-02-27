@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변그리</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #wrap{
+            width: 96%;/*960px=>96%*/
+            height: 500px;
+            margin: auto;
+            border: 4px solid #000;
+        }
+        /* 가변그리드 공식
+        (만들 크기÷나를 감싸고 있는전체크기)×100 = nn% <-적용할 크기 */
+        /* w 900px */
+        /* (900÷960px)x100 = 93.75 */
+        #wrap .container{
+            width: 93.75%;
+            height: 450px;
+            border: 4px solid red;
+            margin: auto;
+        }
+        /* w 300px */
+        /* (300÷900px)x100 = 33.33333...% */
+        #wrap .container div.box1{
+            width: 33.33333333333%;
+            height: 100%;
+            background-color: orange;
+            float: left;
+        }
+        /* w 600px */
+        /* (600÷900px)x100 = 66.666666666667% */
+        #wrap .container div.box2{
+            width: 66.666666666667%;
+            height: 100%;
+            background-color: palevioletred;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="box1">300px</div>
+            <div class="box2">600px</div>
+        </div>
+    </div>
+</body>
+</html>

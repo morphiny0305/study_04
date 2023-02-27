@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vw와 vh</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        @media all and (min-width:320px){
+            body{background-color: yellow;}
+            .vw{font-size: 5vw;}
+            .vh{font-size: 5vh;}
+            /* (5x320)/100 = 16px */
+        }
+        @media all and (min-width:768px){
+            body{background-color: royalblue;}
+            .vw{font-size: 10vw;}
+            .vh{font-size: 10vh;}
+        }
+        @media all and (min-width:960px){
+            body{background-color: plum}
+            .vw{font-size: 15vw;}
+            .vh{font-size: 15vh;}
+        }
+    </style>
+</head>
+<body>
+    <p><a href="/">홈으로</a></p>
+    <p class="vw">vw단위</p>
+    <p class="vh">vh단위</p>
+</body>
+</html>

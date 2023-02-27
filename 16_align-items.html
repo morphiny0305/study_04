@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        h2{text-align: center;}
+        .wrap{margin: auto; width: 220px; height: 300px;border: 1px solid black; margin: 0 auto 50px;display: flex; flex-direction: row;}
+
+        .wrap div{flex: 1;} /*부모 요소에 채워주는 속성*/
+        .wrap div:nth-child(1){background-color: lightpink;}
+        .wrap div:nth-child(2){background-color: skyblue;}
+        .wrap div:nth-child(3){background-color: lightgreen;}
+        
+        .wrap1{align-items: stretch;}
+        .wrap2{align-items: flex-start;}
+        .wrap3{align-items: flex-end;}
+        .wrap4{align-items: center;}
+    </style>
+</head>
+<body>
+    <h2>stretch: 기본값</h2>
+    <div class="wrap wrap1">
+        <div>pinkkkk</div>
+        <div>blue</div>
+        <div>green</div>
+    </div>
+    <h2>flex-start</h2>
+    <div class="wrap wrap2">
+        <div>pinkkkk</div>
+        <div>blue</div>
+        <div>green</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="wrap wrap3">
+        <div>pinkkkk</div>
+        <div>blue</div>
+        <div>green</div>
+    </div>
+    <h2>center</h2>
+    <div class="wrap wrap4">
+        <div>pinkkkk</div>
+        <div>blue</div>
+        <div>green</div>
+</body>
+</html>

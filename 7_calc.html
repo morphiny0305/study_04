@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #wrap{width: 90%;height: 500px;margin: auto;border: 4px solid rebeccapurple;}
+
+        /* wrap안에 있는 .box의 너비를 100%에서 100px을 제외한 너비크기 만큼의 사이즈를 만들고 싶다. */
+        #wrap .box{
+            width: calc(100% - 100px);background-color: lightcoral;
+            margin: auto; height: 100%;
+            /* 글자크기 20px */
+            font-size: calc(10px + 10px);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box">글자크기</div>
+    </div>
+</body>
+</html>

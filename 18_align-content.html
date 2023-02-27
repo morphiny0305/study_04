@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        h2{text-align: center;}
+        .wrap{
+            width: 70px;height: 300px;border: 1px solid black;
+            margin: 0 auto 50px;display: flex;
+            flex-wrap: wrap; /* 주축의 방향을 세로로 변경 = 교차축 */
+        }
+        .wrap div{width: 70px; height: 70px; text-align: center;}
+        .wrap div:nth-child(1){background-color: pink;}
+        .wrap div:nth-child(2){background-color: skyblue;}
+        .wrap div:nth-child(3){background-color: greenyellow;}
+
+        /* align-content를 사용할 때는 주축의 방향을 세로로 (=교차축) 변경하여 사용 */
+        .wrap1{align-content: stretch;}
+        .wrap2{align-content: flex-start;}
+        .wrap3{align-content: flex-end;}
+        .wrap4{align-content: center;}
+        .wrap5{align-content: space-between;}
+        .wrap6{align-content: space-around;}
+    </style>
+</head>
+<body>
+    <h2>stretch: 기본값</h2>
+    <div class="wrap wrap1">
+        <div>PPPPINK</div>
+        <div>BBBBLUE</div>
+        <div>GEEEEEN</div>
+    </div>
+    <h2>flex-start</h2>
+    <div class="wrap wrap2">
+        <div>PPPPINK</div>
+        <div>BBBBLUE</div>
+        <div>GEEEEEN</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="wrap wrap3">
+        <div>PPPPINK</div>
+        <div>BBBBLUE</div>
+        <div>GEEEEEN</div>
+    </div>
+    <h2>center</h2>
+    <div class="wrap wrap4">
+        <div>PPPPINK</div>
+        <div>BBBBLUE</div>
+        <div>GEEEEEN</div>
+    </div>
+    <h2>space-between</h2>
+    <div class="wrap wrap5">
+        <div>PPPPINK</div>
+        <div>BBBBLUE</div>
+        <div>GEEEEEN</div>
+    </div>
+    <h2>space-around</h2>
+    <div class="wrap wrap6">
+        <div>PPPPINK</div>
+        <div>BBBBLUE</div>
+        <div>GEEEEEN</div>
+    </div>
+</body>
+</html>

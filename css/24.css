@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* reset */
+*{margin: 0;padding: 0;}
+/* 960px 가운데정렬 -> 960px=90% */
+#wrap{width: 90%; height: 885px; margin: auto;background-color: burlywood;
+display: flex; flex-flow: row wrap;}
+
+header{
+    order: 1;
+    position: relative; /*logo의 기본 위치 설정*/
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+header h1{
+    /* (120÷960)x100 = 12.5*/
+    width: 12.5%; height: 142px; background-color: red; position: absolute;top: 0;left: 0;margin: auto;
+}
+
+header nav{
+    /* (840÷960)x100 = 87.5*/
+    width: 87.5%; min-height: 80px; background-color: cornflowerblue;
+}
+.slide{order:2; width: 50%;height: 440px;background-color: darkgreen;}
+.gallery{
+    order: 3;
+    /* (260÷960)x100 = 27.0833333333333333333% */
+    width: 27.083333333333333%; height: 440px; background-color: yellow;
+}
+.rankup{
+    order:4;
+    /* (220÷960)x100 = 22.916666666666667% */
+    width: 22.916666666666667%; height: 440px; background-color: lightslategrey;
+}
+.latest{
+    order:5;
+    /* (288÷960)x100 = 30% */
+    width: 30%; height: 270px; background-color: darkcyan;
+}
+.popular{
+    order:6;
+    /* (288÷960)x100 = 30% */
+    width: 30%; height: 270px; background-color: darksalmon;
+}
+.banner{
+    order:7;
+    /* (220÷960)x100 = 22.916666666666667% */
+    width: 22.916666666666667%; height: 270px;display: flex; flex-direction: column;
+}
+.banner div:nth-child(1){background-color: aqua; flex: 1;}
+.banner div:nth-child(2){background-color: seagreen; flex: 1;}
+
+.social{
+    order: 8;
+    /* (164÷960)x100 =17.0833333333333333% */
+    width: 17.0833333333333333%; height: 270px; background-color: coral;
+}
+
+footer{
+    order: 9;
+    width: 100%; height: 95px; background-color: deeppink;
+}

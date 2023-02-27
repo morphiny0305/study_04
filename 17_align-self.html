@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        h2, p{text-align: center;}
+        .wrap{margin: auto; width: 220px; height: 300px;border: 1px solid black; margin: 0 auto 50px;display: flex;
+            align-items: center; /*auto가 상속 받는 곳*/}
+        .wrap div{flex: 1; background-color: pink;} 
+
+        .wrap1 div{align-self: auto;}
+        .wrap2 div{align-self: stretch;}
+        .wrap3 div{align-self: flex-start;}
+        .wrap4 div{align-self: flex-end;}
+        .wrap5 div{align-self: center;}
+    </style>
+</head>
+<body>
+    <h2>auto: 기본값</h2>
+    <p>부모 박스에 align-items의 속성값을 상속받음, 부모 박스에 속성이 없는 경우에는 stretch속성값 적용</p>
+    <div class="wrap wrap1">
+        <div>pinkkkk</div>
+    </div>
+    <h2>stretch</h2>
+    <div class="wrap wrap2">
+        <div>pinkkkk</div>
+    </div>
+    <h2>flex-start</h2>
+    <div class="wrap wrap3">
+        <div>pinkkkk</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="wrap wrap4">
+        <div>pinkkkk</div>
+    </div>
+    <h2>center</h2>
+    <div class="wrap wrap5">
+        <div>pinkkkk</div>
+    </div>
+</body>
+</html>

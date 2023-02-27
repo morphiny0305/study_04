@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변마진</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #wrap{
+            width: 90%;/*960px*/
+            height: 500px;
+            margin: auto;
+            border: 4px solid #000;
+        }
+        #wrap div{
+            float: left;
+            /* (만들 크기÷나를 감싸고 있는전체크기)×100 = nn% <-적용할 크기 */
+            /* (300/960)x100 = 31.25% */
+            width: 31.25%;
+            height: 100%;
+        }
+        #wrap div.box1{
+            background-color: lightblue;
+            /* (만들 크기÷나를 감싸고 있는전체크기)×100 = nn% <-적용할 크기 */
+            /* (360/960)x100 = 37.5 */
+            margin-right: 37.5%;
+        }
+        #wrap div.box2{background-color: lightcoral;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box1">300px</div>
+        <div class="box2">300px</div>
+    </div>
+</body>
+</html>

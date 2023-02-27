@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-flow</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #wrap{
+            width: 90%;
+            height: 500px;
+            margin: auto;
+            border: 4px solid black;
+            display: flex;
+            flex-flow: row wrap-reverse;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap-reverse; */
+        }
+        #wrap div{width: 100%;}
+        #wrap .box1{background-color: red;}
+        #wrap .box2{background-color: orange}
+        #wrap .box3{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <h3>flex-flow는 flex-direction과 flex-wrap을 한번에 쓸 때 사용</h3>
+    <div id="wrap">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+    </div>
+</body>
+</html>

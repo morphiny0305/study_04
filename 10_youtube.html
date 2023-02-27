@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 영상 가져오기</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #wrap{
+            position: relative;
+            /* (9/16)x100 = 56.25 */
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        #wrap iframe{
+            width: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <iframe width="436" height="245" src="https://www.youtube.com/embed/2qrk-B89-90" title="김은숙 작가 안길호 감독, 배우들의 비하인드 코멘터리 | 더 글로리 | 넷플릭스" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
